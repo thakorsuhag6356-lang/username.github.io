@@ -78,3 +78,66 @@
     </div>
     </body>
 </html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Updated Website</title>
+    <style>
+        /* Background change karne ke liye */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ibb.co/VYxDnRHG/IMG-20251103-200508.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* Text dikhne ke liye white color */
+        }
+
+        /* Thumbnail/Card style ke liye */
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5); /* Background thoda dark karne ke liye */
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            color: black;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thumbnail-container">
+        <div class="card">
+            <img src="https://i.ibb.co/VYxDnRHG/IMG-20251103-200508.jpg" alt="Thumbnail">
+            <div class="card-content">
+                <h3>Mera Thumbnail</h3>
+                <p>Ye image background aur thumbnail dono mein set hai.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
