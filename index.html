@@ -213,37 +213,47 @@
 </head>
 <body>
 
-    <div class="search-container">
-        <h2>Search Items:</h2>
-        <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Type to search...">
-        
-        <ul id="myUL">
-            <li><a href="#">Apple</a></li>
-            <li><a href="#">Banana</a></li>
-            <li><a href="#">Cherry</a></li>
-            <li><a href="#">Date</a></li>
-        </ul>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Game Showcase</h1>
+  </header>
 
-    <script>
-        function searchFunction() {
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName("li");
+  <!-- Main Section -->
+  <main>
+    <section class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="game1.jpg" alt="Game 1" class="card-image">
+        <h2>Game Title 1</h2>
+        <p>This is a great game to play!</p>
+        <button class="btn">Play Now</button>
+      </div>
 
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="game2.jpg" alt="Game 2" class="card-image">
+        <h2>Game Title 2</h2>
+        <p>Experience the excitement!</p>
+        <button class="btn">Play Now</button>
+      </div>
 
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="game3.jpg" alt="Game 3" class="card-image">
+        <h2>Game Title 3</h2>
+        <p>The ultimate adventure awaits!</p>
+        <button class="btn">Play Now</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
